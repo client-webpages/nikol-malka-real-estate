@@ -4,16 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nikol Malka | Los Angeles Luxury Real Estate</title>
-<meta name="description" content="Nikol Malka, Realtor® with Christie's International Real Estate, representing buyers and sellers across Encino, Sherman Oaks, Malibu, Calabasas and the surrounding Los Angeles communities.">
+<meta name="description" content="Nikol Malka, Realtor® with Christie's International Real Estate. Buying, selling and investing across nine Los Angeles neighborhoods.">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Nikol Malka | Los Angeles Luxury Real Estate">
-<meta property="og:description" content="Realtor® with Christie's International Real Estate — Encino, Sherman Oaks, Malibu, Calabasas and the surrounding Los Angeles communities.">
+<meta property="og:description" content="Realtor® with Christie's International Real Estate. Buying, selling and investing across nine Los Angeles neighborhoods.">
 <meta property="og:url" content="https://client-webpages.github.io/nikol-malka-real-estate/">
 <meta property="og:image" content="https://client-webpages.github.io/nikol-malka-real-estate/nikol-hero.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Nikol Malka | Los Angeles Luxury Real Estate">
-<meta name="twitter:description" content="Realtor® with Christie's International Real Estate — Encino, Sherman Oaks, Malibu, Calabasas and the surrounding Los Angeles communities.">
+<meta name="twitter:description" content="Realtor® with Christie's International Real Estate. Buying, selling and investing across nine Los Angeles neighborhoods.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23241e19'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='32' fill='%23c1573a' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
 <script type="application/ld+json">
 {
@@ -40,17 +40,16 @@
 <style>
   :root{
     --page:#faf6ee;
-    --panel:#f2ead9;
     --ink:#241e19;
-    --ink-soft:#5c5145;
+    --ink-soft:#6b6053;
     --clay:#bf5a37;
     --clay-dark:#9c4529;
     --pine:#33513f;
     --line:rgba(36,30,25,0.12);
-    --max:1100px;
+    --max:1080px;
   }
   *{box-sizing:border-box;margin:0;padding:0;}
-  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion:no-preference){ html{scroll-behavior:smooth;} }
   body{
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
     background:var(--page);
@@ -73,161 +72,115 @@
     text-transform:uppercase;
     color:var(--clay-dark);
     font-weight:700;
-    margin-bottom:0.75rem;
+    margin-bottom:0.6rem;
     display:block;
   }
   .btn{
     display:inline-block;
-    padding:14px 28px;
+    padding:14px 30px;
     border-radius:3px;
     font-size:14.5px;
     font-weight:600;
-    letter-spacing:0.01em;
-    text-align:center;
+    background:var(--clay);
+    color:#fff;
   }
-  .btn-primary{background:var(--clay);color:#fff;}
-  .btn-secondary{border:1px solid var(--ink);color:var(--ink);}
-  .btn-row{display:flex;gap:14px;flex-wrap:wrap;}
 
   header{
-    position:sticky;top:0;z-index:10;
-    background:rgba(250,246,238,0.94);
-    backdrop-filter:blur(6px);
+    padding:20px 0;
     border-bottom:1px solid var(--line);
   }
   header .bar{
     display:flex;align-items:center;justify-content:space-between;
-    padding:16px 1.5rem;
-    max-width:var(--max);margin:0 auto;
+    max-width:var(--max);margin:0 auto;padding:0 1.5rem;
   }
-  header .mark{font-family:Georgia,serif;font-size:18px;letter-spacing:0.02em;}
+  header .mark{font-family:Georgia,serif;font-size:18px;}
   header .mark small{display:block;font-family:-apple-system,sans-serif;font-size:9.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--clay-dark);font-weight:700;margin-top:2px;}
-  header .btn{padding:9px 18px;font-size:13px;}
 
-  .hero{
-    padding:4rem 0 4.5rem;
-    border-bottom:1px solid var(--line);
-  }
+  .hero{padding:4.5rem 0;}
   .hero .grid2{
     display:grid;
-    grid-template-columns:1.1fr 0.9fr;
-    gap:3rem;
+    grid-template-columns:1.15fr 0.85fr;
+    gap:3.5rem;
     align-items:center;
   }
-  .hero h1{font-size:clamp(30px,4.4vw,46px);margin-bottom:1.1rem;}
-  .hero p.sub{font-size:16.5px;color:var(--ink-soft);max-width:50ch;margin-bottom:2rem;}
+  .hero h1{font-size:clamp(30px,4.2vw,44px);margin-bottom:0.9rem;}
+  .hero p.sub{font-size:16.5px;color:var(--ink-soft);max-width:42ch;margin-bottom:1.75rem;}
+  .paths{display:flex;gap:22px;margin-bottom:2rem;flex-wrap:wrap;}
+  .paths a{font-size:14px;font-weight:600;color:var(--pine);border-bottom:1px solid var(--pine);padding-bottom:2px;}
   .hero-photo{
-    position:relative;
     border-radius:8px;
     overflow:hidden;
-    box-shadow:0 18px 40px -14px rgba(36,30,25,0.35);
-    border:1px solid var(--line);
+    box-shadow:0 18px 40px -14px rgba(36,30,25,0.3);
   }
   .hero-photo img{width:100%;height:auto;}
 
-  .trustbar{
-    border-bottom:1px solid var(--line);
-    padding:1.1rem 0;
-    background:var(--panel);
-  }
-  .trustbar .row{
-    display:flex;flex-wrap:wrap;gap:10px 28px;
-    font-size:12.5px;letter-spacing:0.03em;color:var(--ink-soft);
-  }
-  .trustbar strong{color:var(--ink);font-weight:700;}
-
   section{padding:4rem 0;}
-  section.tight{padding:3rem 0;}
-  .section-head{max-width:52ch;margin-bottom:2.25rem;}
-  .section-head h2{font-size:clamp(24px,3.4vw,32px);}
-  .section-head p{color:var(--ink-soft);margin-top:0.6rem;font-size:15.5px;}
+  .section-head{max-width:44ch;margin-bottom:2rem;}
+  .section-head h2{font-size:clamp(23px,3vw,29px);}
 
-  .quote-block{
-    border-left:3px solid var(--clay);
-    padding:0.25rem 0 0.25rem 1.5rem;
-    font-family:Georgia,serif;
-    font-style:italic;
-    font-size:clamp(19px,2.6vw,23px);
-    color:var(--ink);
-    max-width:46ch;
-    margin:1.5rem 0;
-  }
-
-  .grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-    gap:16px;
-  }
-  .card{
-    background:#fff;
-    border:1px solid var(--line);
-    border-radius:6px;
-    padding:1.5rem 1.35rem;
-  }
-  .card h3{font-size:18px;margin-bottom:8px;color:var(--pine);}
-  .card p{font-size:14px;color:var(--ink-soft);}
-
-  .areas-grid{
+  .services{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:14px;
+    gap:2rem;
   }
-  .area-card{
-    background:#fff;
+  .services h3{font-size:17px;margin-bottom:6px;color:var(--pine);}
+  .services p{font-size:14.5px;color:var(--ink-soft);}
+
+  .why{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:1.75rem;
+  }
+  .why div{border-top:2px solid var(--clay);padding-top:14px;}
+  .why h3{font-family:-apple-system,sans-serif;font-weight:700;font-size:15px;margin-bottom:6px;}
+  .why p{font-size:13.8px;color:var(--ink-soft);}
+
+  .tags{display:flex;flex-wrap:wrap;gap:10px;}
+  .tags span{
+    font-size:13.5px;
+    padding:9px 16px;
     border:1px solid var(--line);
-    border-left:3px solid var(--clay);
-    border-radius:4px;
-    padding:1.15rem 1.25rem;
+    border-radius:30px;
+    background:#fff;
+    color:var(--ink);
   }
-  .area-card h3{font-size:16.5px;margin-bottom:5px;}
-  .area-card p{font-size:13.3px;color:var(--ink-soft);}
+
+  .about p{color:var(--ink-soft);font-size:15.5px;max-width:58ch;margin-bottom:1.25rem;}
+  .trustline{font-size:12.5px;letter-spacing:0.03em;color:var(--ink-soft);}
+  .trustline strong{color:var(--ink);font-weight:700;}
 
   .cta-band{
     background:var(--ink);
-    color:var(--page);
+    color:#fff;
     text-align:center;
     padding:4rem 0;
   }
-  .cta-band h2{color:#fff;font-size:clamp(24px,3.4vw,32px);max-width:22ch;margin:0 auto 0.75rem;}
-  .cta-band p{color:#c9beac;margin-bottom:1.75rem;}
-  .cta-band .btn-row{justify-content:center;}
-  .cta-band .btn-secondary{border-color:#7c705f;color:#fff;}
+  .cta-band h2{color:#fff;font-size:clamp(24px,3.4vw,30px);margin-bottom:0.6rem;}
+  .cta-band p{color:#c9beac;margin-bottom:1.75rem;font-size:15px;}
 
-  footer{padding:2.5rem 0 3rem;}
+  footer{padding:2rem 0;border-top:1px solid var(--line);}
   footer .row{
-    display:flex;flex-wrap:wrap;justify-content:space-between;gap:1.25rem;
-    font-size:12.5px;color:var(--ink-soft);
-    border-top:1px solid var(--line);
-    padding-top:1.75rem;
+    display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;
+    font-size:12px;color:var(--ink-soft);
   }
-  footer a.clay{color:var(--clay-dark);font-weight:600;}
+  footer a{color:var(--clay-dark);font-weight:600;}
 
   @media (max-width:860px){
     .hero .grid2{grid-template-columns:1fr;}
-    .hero-photo{order:-1;max-width:360px;margin:0 auto;}
-    .areas-grid{grid-template-columns:repeat(2,1fr);}
+    .hero-photo{order:-1;max-width:340px;margin:0 auto;}
+    .services{grid-template-columns:1fr;gap:1.75rem;}
+    .why{grid-template-columns:repeat(2,1fr);}
   }
-  @media (max-width:640px){
-    .btn-row{flex-direction:column;}
-    .btn-row .btn{width:100%;}
-    header .btn{display:none;}
-    .areas-grid{grid-template-columns:1fr;}
-  }
-
-  .reveal{opacity:0;transform:translateY(14px);transition:opacity 0.6s ease,transform 0.6s ease;}
-  .reveal.in{opacity:1;transform:translateY(0);}
-  @media (prefers-reduced-motion:reduce){
-    .reveal{opacity:1;transform:none;transition:none;}
+  @media (max-width:520px){
+    .why{grid-template-columns:1fr;}
   }
 </style>
 </head>
 <body>
-<noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
 
 <header>
   <div class="bar">
     <div class="mark">Nikol Malka<small>Christie's Int'l Real Estate</small></div>
-    <a class="btn btn-primary" href="https://instagram.com/the_real_nikol" target="_blank" rel="noopener">Message on Instagram</a>
   </div>
 </header>
 
@@ -235,12 +188,14 @@
   <div class="wrap grid2">
     <div>
       <span class="eyebrow">Los Angeles · Luxury Real Estate</span>
-      <h1>Distinguished real estate across Los Angeles's most desirable addresses.</h1>
-      <p class="sub">Nikol Malka is a Realtor® with Christie's International Real Estate, representing discerning buyers and sellers across Encino, Sherman Oaks, Malibu, Calabasas and the surrounding Los Angeles communities — with the discretion and market command every transaction deserves.</p>
-      <div class="btn-row">
-        <a class="btn btn-primary" href="https://instagram.com/the_real_nikol" target="_blank" rel="noopener">Message on Instagram</a>
-        <a class="btn btn-secondary" href="mailto:nikolmalka@gmail.com">Email me</a>
+      <h1>Real estate, represented right.</h1>
+      <p class="sub">Nikol Malka, Realtor® with Christie's International Real Estate — one trusted point of contact, whatever you're here to do.</p>
+      <div class="paths">
+        <a href="#buying">Buying</a>
+        <a href="#selling">Selling</a>
+        <a href="#investing">Investing</a>
       </div>
+      <a class="btn" href="https://instagram.com/the_real_nikol" target="_blank" rel="noopener">Message Nikol</a>
     </div>
     <div class="hero-photo">
       <img src="nikol-hero.jpg" alt="Nikol Malka, Realtor, Christie's International Real Estate" width="1320" height="1456" loading="eager">
@@ -248,129 +203,89 @@
   </div>
 </section>
 
-<div class="trustbar">
-  <div class="wrap row">
-    <span><strong>Christie's International Real Estate</strong> — Southern California</span>
-    <span>Adi Livyatan Group</span>
-    <span>DRE #02226672</span>
-    <span>Los Angeles, CA</span>
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Services</span>
+      <h2>However you're moving forward.</h2>
+    </div>
+    <div class="services">
+      <div id="buying">
+        <h3>Buying</h3>
+        <p>Access across Los Angeles's top neighborhoods, including homes not yet on the open market.</p>
+      </div>
+      <div id="selling">
+        <h3>Selling</h3>
+        <p>Strategic pricing and presentation, negotiated start to close.</p>
+      </div>
+      <div id="investing">
+        <h3>Investing</h3>
+        <p>A clear, data-driven read on value, timing, and long-term upside.</p>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
 <section>
   <div class="wrap">
-    <div class="section-head reveal">
+    <div class="section-head">
+      <span class="eyebrow">Why Nikol</span>
+      <h2>What makes the difference.</h2>
+    </div>
+    <div class="why">
+      <div><h3>Global backing</h3><p>Christie's International Real Estate resources behind every deal.</p></div>
+      <div><h3>Hyper-local knowledge</h3><p>Nine neighborhoods, known street by street.</p></div>
+      <div><h3>Direct access</h3><p>You work with Nikol — not an assistant.</p></div>
+      <div><h3>Full-spectrum expertise</h3><p>Buying, selling and investing, in one relationship.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Areas served</span>
+      <h2>Nine Los Angeles neighborhoods.</h2>
+    </div>
+    <div class="tags">
+      <span>Encino</span>
+      <span>Sherman Oaks</span>
+      <span>Westlake Village</span>
+      <span>Tarzana</span>
+      <span>Valley Village</span>
+      <span>North Hollywood</span>
+      <span>Malibu</span>
+      <span>West Hills</span>
+      <span>Calabasas</span>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="wrap">
+    <div class="section-head">
       <span class="eyebrow">About Nikol</span>
-      <h2>A refined, hands-on approach to Los Angeles real estate.</h2>
+      <h2>A personal approach, global backing.</h2>
     </div>
-    <p class="quote-block reveal">"I like to know the neighborhoods I represent as well as I know the properties in them."</p>
-    <p style="color:var(--ink-soft);max-width:60ch;font-size:15.5px;">Working alongside the Adi Livyatan Group at Christie's International Real Estate, Nikol brings a highly localized command of the San Fernando Valley, Conejo Valley and coastal Malibu markets — pairing the resources of a global luxury brokerage with a genuinely personal, detail-driven approach to every transaction.</p>
-  </div>
-</section>
-
-<section class="tight" style="background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">How I can help</span>
-      <h2>Wherever you're starting from.</h2>
-    </div>
-    <div class="grid reveal">
-      <div class="card">
-        <h3>Buying a home</h3>
-        <p>A guided search across Los Angeles's most desirable neighborhoods — including properties not yet on the open market.</p>
-      </div>
-      <div class="card">
-        <h3>Selling a home</h3>
-        <p>Strategic pricing, elevated presentation and skilled negotiation, from listing to close.</p>
-      </div>
-      <div class="card">
-        <h3>Market guidance</h3>
-        <p>A precise, current read on value — for your home, or the neighborhood you have in mind.</p>
-      </div>
-      <div class="card">
-        <h3>Just exploring</h3>
-        <p>Considering a move but not ready to commit? A candid conversation, with no pressure attached.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Where I work</span>
-      <h2>Nine neighborhoods across Los Angeles.</h2>
-    </div>
-    <div class="areas-grid reveal">
-      <div class="area-card">
-        <h3>Encino</h3>
-        <p>Hillside estates built for space, multi-generational living, and appreciation.</p>
-      </div>
-      <div class="area-card">
-        <h3>Sherman Oaks</h3>
-        <p>Walkable, vibrant, and true value against the surrounding hills.</p>
-      </div>
-      <div class="area-card">
-        <h3>Westlake Village</h3>
-        <p>Lakeside calm and gated privacy, just over the Ventura County line.</p>
-      </div>
-      <div class="area-card">
-        <h3>Tarzana</h3>
-        <p>Tree-lined streets and quiet, established value.</p>
-      </div>
-      <div class="area-card">
-        <h3>Valley Village</h3>
-        <p>Close-knit charm minutes from Studio City and Sherman Oaks.</p>
-      </div>
-      <div class="area-card">
-        <h3>North Hollywood</h3>
-        <p>The Valley's creative core, with real upside for the right buyer.</p>
-      </div>
-      <div class="area-card">
-        <h3>Malibu</h3>
-        <p>Coastal privacy and some of California's most iconic addresses.</p>
-      </div>
-      <div class="area-card">
-        <h3>West Hills</h3>
-        <p>Space, quiet, and room to grow at the Valley's western edge.</p>
-      </div>
-      <div class="area-card">
-        <h3>Calabasas</h3>
-        <p>Gated communities, top-rated schools, and family-first living.</p>
-      </div>
-    </div>
+    <p>Nikol works alongside the Adi Livyatan Group at Christie's International Real Estate. Every client works with her directly, start to finish.</p>
+    <p class="trustline"><strong>Christie's International Real Estate</strong> — Southern California · Adi Livyatan Group · DRE #02226672 · Los Angeles, CA</p>
   </div>
 </section>
 
 <div class="cta-band">
   <div class="wrap">
-    <h2>A conversation, without the pressure.</h2>
-    <p>Whether you're buying, selling, or just want a clearer read on the market — reach out.</p>
-    <div class="btn-row">
-      <a class="btn btn-primary" href="https://instagram.com/the_real_nikol" target="_blank" rel="noopener">Message on Instagram</a>
-      <a class="btn btn-secondary" href="mailto:nikolmalka@gmail.com">Email me</a>
-    </div>
+    <h2>Let's talk.</h2>
+    <p>Buying, selling, or investing — reach out directly.</p>
+    <a class="btn" href="https://instagram.com/the_real_nikol" target="_blank" rel="noopener">Message Nikol</a>
   </div>
 </div>
 
 <footer>
   <div class="wrap row">
     <span>Nikol Malka — Christie's International Real Estate, Southern California — Adi Livyatan Group — DRE #02226672</span>
-    <span><a class="clay" href="https://client-webpages.github.io/nikol-malka-privacy-policy/">Privacy Policy</a> · <a class="clay" href="mailto:nikolmalka@gmail.com">nikolmalka@gmail.com</a></span>
+    <span><a href="https://client-webpages.github.io/nikol-malka-privacy-policy/">Privacy Policy</a> · <a href="mailto:nikolmalka@gmail.com">nikolmalka@gmail.com</a></span>
   </div>
 </footer>
 
-<script>
-  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){
-        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-      });
-    }, {threshold:0.15});
-    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
-  } else {
-    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
-  }
-</script>
 </body>
 </html>
