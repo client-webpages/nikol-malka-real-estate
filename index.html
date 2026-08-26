@@ -6,6 +6,35 @@
 <title>Nikol Malka | Los Angeles Real Estate</title>
 <meta name="description" content="Nikol Malka helps buyers and sellers across Hidden Hills, Calabasas, Sherman Oaks, Encino and Studio City, with Christie's International Real Estate.">
 <meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nikol Malka | Los Angeles Real Estate">
+<meta property="og:description" content="Real estate across Hidden Hills, Calabasas, Sherman Oaks, Encino and Studio City, with Christie's International Real Estate.">
+<meta property="og:url" content="https://client-webpages.github.io/nikol-malka-real-estate/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Nikol Malka | Los Angeles Real Estate">
+<meta name="twitter:description" content="Real estate across Hidden Hills, Calabasas, Sherman Oaks, Encino and Studio City, with Christie's International Real Estate.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2312161d'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='32' fill='%23b8925a' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": "Nikol Malka",
+  "url": "https://client-webpages.github.io/nikol-malka-real-estate/",
+  "email": "nikolmalka@gmail.com",
+  "sameAs": ["https://instagram.com/the_real_nikol"],
+  "areaServed": ["Hidden Hills, CA", "Calabasas, CA", "Sherman Oaks, CA", "Encino, CA", "Studio City, CA"],
+  "memberOf": {
+    "@type": "Organization",
+    "name": "Christie's International Real Estate — Southern California"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Los Angeles",
+    "addressRegion": "CA",
+    "addressCountry": "US"
+  }
+}
+</script>
 <style>
   :root{
     --ink:#12161d;
@@ -148,9 +177,16 @@
     .btn-row .btn{width:100%;}
     header .btn{display:none;}
   }
+
+  .reveal{opacity:0;transform:translateY(14px);transition:opacity 0.6s ease,transform 0.6s ease;}
+  .reveal.in{opacity:1;transform:translateY(0);}
+  @media (prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none;}
+  }
 </style>
 </head>
 <body>
+<noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
 
 <header>
   <div class="bar">
@@ -182,22 +218,22 @@
 
 <section>
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="eyebrow">About Nikol</span>
       <h2>A local, hands-on approach.</h2>
     </div>
-    <p class="quote-block">"I like to actually know the neighborhoods I work in — not just the listings in them."</p>
+    <p class="quote-block reveal">"I like to actually know the neighborhoods I work in — not just the listings in them."</p>
     <p style="color:var(--bone-dim);max-width:58ch;font-size:15.5px;">I work alongside the Adi Livyatan Group at Christie's International Real Estate, focused specifically on five Los Angeles neighborhoods. That focus means I can talk through what actually matters in each one — schools, privacy, walkability, long-term value — instead of general advice that could apply anywhere.</p>
   </div>
 </section>
 
 <section class="tight" style="background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="eyebrow">How I can help</span>
       <h2>Wherever you're starting from.</h2>
     </div>
-    <div class="grid">
+    <div class="grid reveal">
       <div class="card">
         <h3>Buying a home</h3>
         <p>Finding the right property in the right neighborhood — including homes that aren't publicly listed yet.</p>
@@ -220,11 +256,11 @@
 
 <section>
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="eyebrow">Where I work</span>
       <h2>Five neighborhoods, one focus.</h2>
     </div>
-    <div class="grid">
+    <div class="grid reveal">
       <div class="card">
         <h3>Hidden Hills</h3>
         <p>Gated, private, equestrian — a market that moves quietly.</p>
@@ -267,5 +303,17 @@
   </div>
 </footer>
 
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {threshold:0.15});
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+  }
+</script>
 </body>
 </html>
